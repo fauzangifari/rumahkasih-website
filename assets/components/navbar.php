@@ -7,7 +7,7 @@
             <ul class="nav-links">
                 <li class="nav-item"><a href="/">Home</a></li>
                 <li class="nav-item"><a href="/about.php">About Us</a></li>
-                <li class="nav-item"><a href="/mission.php">Our Mission</a></li>
+                <li class="nav-item"><a href="/mission.php">Vision & Mission</a></li>
             </ul>
         </nav>
         <div class="btn-join">

@@ -109,6 +109,7 @@ section {
     background-size: cover;
     background-position: center;
     color: #fff;
+    background-attachment: fixed;
 }
 
 section .overlay {
@@ -189,32 +190,36 @@ section .overlay {
 }
 
 .about {
-    padding: 100px;
+    padding: 80px;
     width: 100%;
     background: white;
+    height: 50%;
 }
 
 .about .container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .about .container .about-content {
-    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.about .container .about-content h2 {
+.about .container h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 
-.about .container .about-content p {
+.about .container .about-content .about-description p{
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about .container .about-content .btn-about a {
@@ -253,10 +258,87 @@ section .overlay {
     visibility: visible;
 }
 
+.about .container .about-content .about-description {
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
 
-.about .container .about-img img {
-    width: 350px;
-    height: 250px;
+.about .container .about-content .about-img img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.program {
+    width: 100%;
+    background: #f1c40f;
+    height: 70%;
+}
+
+.program .container {
+    align-items: center;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.program .container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.program .container .program-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program .container .program-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.program .container .program-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.program .container .program-content .program-item {
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.program .container .program-content .program-item:hover {
+    transform: scale(1.1);
+}
+
+.program .container .program-content .program-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.program .container .program-content .program-item p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.program .container .program-content .program-item img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 
